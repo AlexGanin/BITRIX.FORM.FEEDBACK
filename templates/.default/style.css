@@ -1,0 +1,81 @@
+.text-danger a {
+    color: #dc3545!important;
+    text-decoration: underline;
+}
+
+.text-danger a:hover {
+    color: #dc3545!important;
+}
+
+.material-switch {
+    display: flex;
+    align-items: center;
+}
+
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    /*background: inherit;*/
+    background: #1052ad;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    /*background: inherit;*/
+    background: #1772ef;
+    left: 20px;
+}
+
+.app-header {
+    display: block;
+    color: #fff; 
+    font-weight: 600; 
+    font-size: 22px!important;
+    margin-bottom: -5px;
+}
+
+.block-application {
+    width: 100%;
+    color: #fff;
+    text-align: left;
+}
+
+.block-application .setting {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
