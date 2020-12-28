@@ -34,7 +34,7 @@ $this->setFrameMode(true);
 
         <?elseif($input['TYPE'] == "checkbox"):?>
 
-            <input type="<?=$input['TYPE']?>" checked name="<?=$input['CODE']?>" id="<?=$input['CODE']?>" class="<?=$input['CLASS']?>" value="<?=$input['VALUE']?>">
+            <input type="<?=$input['TYPE']?>" checked name="<?=$input['CODE']?>" id="<?//=$input['CODE']?>" class="<?=$input['CODE']?> <?=$input['CLASS']?>" value="<?=$input['VALUE']?>">
             <?if($input['LABEL']):?>
                 <label for="<?=$input['CODE']?>"><?=$input["NAME"]?></label>
             <?endif?>  
@@ -45,7 +45,7 @@ $this->setFrameMode(true);
                 <label for="<?=$input['CODE']?>"><?=$input["NAME"]?></label>
             <?endif?>
 
-            <input type="<?=$input['TYPE']?>" name="<?=$input['CODE']?>" id="<?=$input['CODE']?>" class="form-control <?=$input['CLASS']?>" value="<?=$input['VALUE']?>">
+            <input type="<?=$input['TYPE']?>" name="<?=$input['CODE']?>" id="<?//=$input['CODE']?>" class="form-control <?=$input['CODE']?> <?=$input['CLASS']?>" value="<?=$input['VALUE']?>">
 
         <?endif;?>
 
@@ -80,11 +80,6 @@ $this->setFrameMode(true);
         <a href="https://policies.google.com/terms">Terms of Service</a> apply.
     </small>
 </div>
-
-<!-- class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit' -->
 
 </form>
 
